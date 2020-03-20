@@ -1,17 +1,16 @@
-#include <cstdio>
-#include <cstdlib> 
+#include <stdio.h>
+#include <stdlib.h>
 
-static int licznik = 0;
-void wywolania() {
+int licznik = 0;
+void wywo(){
 	licznik++;
-	printf("Wywolania: %i\n", licznik);
+	printf("Ilosc wywolan: %i\n", licznik);
 }
 
-int main() {
+int main(){
 	int n = 1;
-	while (n == 1) {
-		
-		wywolania();
+	while (n == 1){
+		wywo();
 		scanf("%i", &n);
 	}
 }
